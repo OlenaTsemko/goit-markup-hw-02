@@ -1,26 +1,90 @@
-/* цвет основного текста #757575 */
-/* дополнительный цвет текста #212121 */
-/* цвет текста белый #FFFFFF */
+/* +цвет основного текста #757575 */
+/* +цвет заголовка и навигации #212121 */
+/* +цвет текста белый #FFFFFF */
 /* цвет текста логотипа #000000 */
-/* акцент #2196F3 */
+/* +акцент #2196F3 */
 /* цвет ховера кнопок #188CE8 */
+/* +основной цвет фона #FFFFFF */
+/* +вторичный цвет фона #F5F4FA */
+/* +цвет фона в футере #2F303A */
 /* цвет ссылок в футере rgba(255, 255, 255, 0.6) */
-/* основной цвет фона #FFFFFF */
-/* цвет фона в футере #2F303A */
-/* вторичный цвет фона #AFB1B8 */
 /* цвет фона в секции деятельность rgba(47, 48, 58, 0.8) */
-/* цвет фона в секции особенности #F5F4FA */
+/* цвет иконок #AFB1B8 */
+/* background иконок в футере background: rgba(255, 255, 255, 0.1) */
 
 :root {
+  --main-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
   --primary-text-color: #757575;
   --secondary-text-color: #ffffff;
-  --heading-color: #212121;
-  --accent: #2196f3;
+  --title-hero-color: #ffffff;
+  --title-color: #212121;
+  --navigation-color: #212121;
+  --accent-color: #2196f3;
+  --background-main-color: #ffffff;
+  --background-secondary-color: #f5f4fa;
+  --background-footer-color: #2f303a;
+}
+
+body {
+  background-color: var(--background-main-color);
+  font-family: var(--main-font);
+  font-size: 14px;
+  color: var(--primary-text-color);
+}
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
 }
 
 /* Логотип */
-.logo-accent {
-  color: var(--accent);
-}
 .logo {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #000000;
 }
+.logo:hover,
+.logo:focus {
+  color: var(--accent-color);
+}
+.logo-accent {
+  color: var(--accent-color);
+}
+/* 
+.logo-accent:hover, 
+.logo-accent:focus {
+  color: #000000;
+} 
+*/
+
+/* Шапка сайта */
+.navigation-list-item-link,
+.header-address-list-item-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--navigation-color);
+}
+.navigation-list-item-link:hover,
+.navigation-list-item-link:focus,
+.header-address-list-item-link:hover,
+.header-address-list-item-link:focus {
+  color: var(--accent-color);
+}
+.header-address-list-item-link {
+  font-style: normal;
+  color: var(--primary-text-color);
+}
+
+/* Raleway bold 700
+Roboto medium 500
+Roboto black 900
+Roboto bold 700
+Roboto regular 400
+*/
