@@ -200,6 +200,48 @@ body {
 .footer .social-list-item-link {
   background-color: rgba(255, 255, 255, 0.1);
 }
+.footer .social-list-item-link:hover,
+.footer .social-list-item-link:focus {
+  background-color: var(--accent-color);
+}
+
+/* Портфолио */
+.portfolio-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--navigation-color);
+  background-color: var(--background-secondary-color);
+}
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+  color: var(--secondary-text-color);
+  background-color: var(--accent-color);
+}
+.portfolio-list-item-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-color);
+}
+.portfolio-list-item-name {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+.portfolio-list-item-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+  background-color: rgba(33, 150, 243, 0.9);
+}
 
 /* Raleway bold 700
 Roboto medium 500
