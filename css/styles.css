@@ -1,17 +1,3 @@
-/* +цвет основного текста #757575 */
-/* +цвет заголовка и навигации #212121 */
-/* +цвет текста белый #FFFFFF */
-/* цвет текста логотипа #000000 */
-/* +акцент #2196F3 */
-/* цвет ховера кнопок #188CE8 */
-/* +основной цвет фона #FFFFFF */
-/* +вторичный цвет фона #F5F4FA */
-/* +цвет фона в футере #2F303A */
-/* цвет ссылок в футере rgba(255, 255, 255, 0.6) */
-/* цвет фона в секции деятельность rgba(47, 48, 58, 0.8) */
-/* цвет иконок #AFB1B8 */
-/* background иконок в футере background: rgba(255, 255, 255, 0.1) */
-
 :root {
   --main-font: 'Roboto', sans-serif;
   --secondary-font: 'Raleway', sans-serif;
@@ -29,7 +15,6 @@
 body {
   background-color: var(--background-main-color);
   font-family: var(--main-font);
-  font-size: 14px;
   color: var(--primary-text-color);
 }
 .link {
@@ -38,8 +23,11 @@ body {
 .list {
   list-style: none;
 }
+.address {
+  font-style: normal;
+}
 
-/* Логотип */
+/* Логотип в шапке */
 .logo {
   font-family: var(--secondary-font);
   font-weight: 700;
@@ -48,19 +36,17 @@ body {
   letter-spacing: 0.03em;
   color: #000000;
 }
+.logo-accent {
+  color: var(--accent-color);
+}
 .logo:hover,
 .logo:focus {
   color: var(--accent-color);
 }
-.logo-accent {
-  color: var(--accent-color);
-}
-/* 
-.logo-accent:hover, 
+.logo-accent:hover,
 .logo-accent:focus {
   color: #000000;
-} 
-*/
+}
 
 /* Шапка сайта */
 .navigation-list-item-link,
@@ -78,8 +64,141 @@ body {
   color: var(--accent-color);
 }
 .header-address-list-item-link {
-  font-style: normal;
   color: var(--primary-text-color);
+}
+
+/* Секция Герой */
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--title-hero-color);
+  background-color: rgba(47, 48, 58, 0.8);
+}
+.modal-btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  /* display: flex; */
+  /* align-items: center; */
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--secondary-text-color);
+  background-color: var(--accent-color);
+}
+.modal-btn:hover,
+.modal-btn:focus {
+  background-color: #188ce8;
+}
+
+/* Особенности */
+.features-list-item-img {
+  background-color: var(--background-secondary-color);
+}
+.features-subtitle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-color);
+}
+.features-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* Деятельность */
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+.activity-list-item-description {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+/* Команда */
+.team-list-item-name,
+.team-list-item-position {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+.team-list-item-position {
+  font-weight: 400;
+  color: var(--primary-text-color);
+}
+.social-list-item-link {
+  background-color: var(--background-main-color);
+}
+.social-list-item-link:hover,
+.social-list-item-link:focus {
+  background-color: var(--accent-color);
+}
+
+/* Постоянные клиенты */
+
+/* Логотип в подвале */
+.footer-address-container .logo {
+  color: #ffffff;
+}
+.footer-address-container .logo:hover,
+.footer-address-container .logo:focus {
+  color: var(--accent-color);
+}
+.footer-address-container .logo-accent:hover,
+.footer-address-container .logo-accent:focus {
+  color: #ffffff;
+}
+
+/* Подвал */
+.footer {
+  background-color: var(--background-footer-color);
+}
+.footer-address-list-item-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-address-list-item-link.location {
+  color: var(--secondary-text-color);
+}
+.footer-address-list-item-link:hover,
+.footer-address-list-item-link:focus {
+  color: var(--accent-color);
+}
+.footer-social-list-container .text,
+.footer-form-container .text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+}
+.footer .social-list-item-link {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 /* Raleway bold 700
@@ -88,3 +207,17 @@ Roboto black 900
 Roboto bold 700
 Roboto regular 400
 */
+
+/* +цвет основного текста #757575 */
+/* +цвет заголовка и навигации #212121 */
+/* +цвет текста белый #FFFFFF */
+/* цвет текста логотипа #000000 */
+/* +акцент #2196F3 */
+/* цвет ховера кнопок #188CE8 */
+/* +основной цвет фона #FFFFFF */
+/* +вторичный цвет фона #F5F4FA */
+/* +цвет фона в футере #2F303A */
+/* цвет ссылок в футере rgba(255, 255, 255, 0.6) */
+/* цвет фона в секции деятельность rgba(47, 48, 58, 0.8) */
+/* цвет иконок #AFB1B8 */
+/* background иконок в футере background: rgba(255, 255, 255, 0.1) */
